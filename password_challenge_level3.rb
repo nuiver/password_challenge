@@ -60,14 +60,11 @@ def passwordcheck_3(p)
 		else
 			pass_bolean = false
 		end
-		if pass_bolean == true
-			puts "Password accepted"
-		else
-			puts "Password failed because of the characters"
+		puts pass_bolean == true ? "Password accepted" : "Password failed because of the characters"
 		end
 	end
 	#puts pass_bolean
-	return pass_bolean
+	pass_bolean
 end
 
 #tests
